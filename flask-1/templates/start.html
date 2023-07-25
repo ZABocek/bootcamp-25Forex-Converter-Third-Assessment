@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Hello</h1>
+    
+    <form action="/currency" method="POST">
+        <label for="currFrom">Converting from:</label>
+        <input type="text" name ="origin" id="currFrom" autofocus>
+        
+        <label for="foreign">Converting to:</label>
+        <input type = "text" name ="foreign" id ="foreign">
+
+        <label for="amount">Amount</label>
+        <input type="number" name = "amount" class="amount" required ="required">
+        <button>Enter</button>
+    </form>
+
+{% endblock %}
